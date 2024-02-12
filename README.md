@@ -1,10 +1,8 @@
-# embroidery
-Responsive landing page that implements CSS Grids, Animations for Image Gallery + HTML Class Manipulations for a Dark Mode theme. 
-
 # Embroidery Hobby Website
 
+
 ## Introduction
-This project is a personal website dedicated to the art of embroidery. It showcases various aspects of embroidery, from basic techniques to modern applications. The site is designed to be informative, visually appealing, and user-friendly, with a focus on responsive design and interactive elements.
+This project is a personal project, a basic responsive landing page that implements CSS Grids and Animations for the Image Gallery, as well as HTML Class Manipulations for a Dark Mode theme. 
 
 ## Technologies Used
 - **HTML5:** For structuring the content and layout of the web pages.
