@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embroidery🪡🧵 - My Hobby</title>
+    <style>
+      body {
+        max-width: 900px;
+        margin: 0 auto;
+        min-width: 320px;
+      }
+      h1 {
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+        margin: 25px;
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      img {
+        min-width: 50%;
+        max-width: 100%;
+        margin: 15px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        padding: 10px;
+        justify-items: center;
+      }
+      .gallery img {
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        border: solid 1px black;
+        transition: all 150ms ease-in-out;
+      }
+      .gallery img:hover {
+        transform: scale(1.75);
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px solid black;
+        background-color: #00679d;
+        border-radius: 6px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+        font: bolder 20px monospace;
+      }
+      a {
+        text-decoration: none;
+      }
+      button:hover {
+        background-color: white;
+        color: black;
+        box-shadow: inset;
+      }
+      footer {
+        text-decoration: none;
+        margin: 10px 0px;
+        text-align: center;
+        font-size: 18px;
+      }
+      .page {
+        border-radius: 10px;
+        padding: 20px;
+        font-family: "Courier New", Courier, monospace;
+        transition: background-color 0.5s ease;
+      }
+      .container {
+        text-align: center;
+        align-items: center;
+        border-radius: 10px;
+        background-color: white;
+        border: black 1px solid;
+        padding: 15px;
+      }
+      .themeToggle {
+        background-color: black;
+        color: white;
+        margin-bottom: 30px;
+      }
+      .embroideryImg {
+        transition: transform 150ms ease-in-out, filter 200ms ease-in-out;
+        background-color: black;
+        border: black 1px solid;
+        border-radius: 10px;
+        margin: 25px 0px;
+        max-width: 90%;
+      }
+      .embroideryImg:hover {
+        margin: 25px;
+        filter: contrast(30%);
+        border: #00679d 3px solid;
+        transform: scale(1.2);
+      }
+      .lightTheme {
+        background-color: #00679d;
+      }
+      .darkTheme {
+        background-color: #000000;
+        color: #ffffff;
+       
+      }
+      .darkTheme .container {
+        background-color: #000000; 
+        color: #ffffff; 
+      }
+      
+      .darkTheme .gallery .container button {
+        border: 1px dashed white;
+      }
+      
+      @media only screen and (max-width: 480px) {
+        .h1 {
+          font-size: 20px;
+        }
+        h2 {
+          font-size: 18px;
+        }
+        p {
+          font-size: 16px;
+        }
+        footer {
+          font-size: 16px;
+        }
+        .page {
+          margin: auto 0;
+          padding: 10px;
+          text-align: center;
+          justify-content: center;
+          max-width: 300px;
+        }
+        .container {
+          max-width: 290px;
+          contain: content;
+        }
+        .gallery {
+          max-width: 290px;
+          grid-template-columns: 1fr;
+        }
+        .gallery img {
+          width: 100px;
+          height: 100px;
+        }
+        img:hover {
+          transform: scale(1.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .embroideryImg {
+          width: 150px;
+          height: 150px;
+        }
+        .embroideryImg:hover {
+          transform: scale(1.25);
+        }
+      }
+    </style>
+  </head>
+  <body class="page lightTheme">
+    <button type="button" class="themeToggle" id="themeToggle">
+      Dark Mode
+    </button>
+    <div class="container">
+      <h1>🪡🧵 What is Embroidery?</h1>
+      <h2>My favourite type of crafting</h2>
+      <p>
+        Embroidery is the art of decorating fabric or other materials using a
+        needle to apply thread or yarn. Embroidery may also incorporate other
+        materials such as pearls, beads, quills, and sequins. In modern days,
+        embroidery is usually seen on caps, hats, coats, overlays, blankets,
+        dress shirts, denim, dresses, stockings, scarfs, and golf shirts.
+        Embroidery is available in a wide variety of thread or yarn colour. It
+        is often used to personalize gifts or clothing items. Some of the basic
+        techniques or stitches of the earliest embroidery are chain stitch,
+        buttonhole or blanket stitch, running stitch, satin stitch, and cross
+        stitch.Those stitches remain the fundamental techniques of hand
+        embroidery today.
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Embroidery" target="_blank">
+        <button type="button">Learn More</button>
+      </a>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/853/original/embroidery1.jpeg?1707610373"
+        alt="embroidered big red flower and small blue dainty flowers with green leaves on a white cotton fabric"
+        class="embroideryImg"
+      />
+      <div class="gallery">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/860/original/thread.jpeg?1707611266"
+          alt="a view of an assortment of multi colour thread spindles neatly
+        lined-up."
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/852/original/black.jpeg?1707610231"
+          alt="embroidery flowers on a black canvas sneaker"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/858/original/needle2.jpeg?1707611067"
+          alt="canvas close-up with a pattern being added mid stitch with a green thread."
+        /><img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/854/original/embroidery2.jpeg?1707610493"
+          alt="a mixed assortment of embroidment items: different coloured threads, needles, buttons, a 2D embroided fox, a cute 2D embroided cartoon cat on thick canvas; and asorted related items. "
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/855/original/embroidery3.jpeg?1707610739"
+          alt="embroidment hoop, containing a work in progress, of a tree with detailed leaves ands purple blossoms."
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/859/original/sew.jpeg?1707611194"
+          alt="close-up of embroidment needles in a pin cushion"
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/857/original/lace.jpeg?1707610960"
+          alt="a close-up of embroided lace in botantical inspired pattern in vibrant pinks and oranges."
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/114/856/original/jeans.jpeg?1707610849"
+          alt="close up of red florals on denim"
+        />
+      </div>
+    </div>
+    <footer>
+      Coded with ♥️ by
+      <a href="https://github.com/gracemorganmaxwell" target="_blank">Gracie</a>
+    </footer>
+    <script>
+      const button = document.querySelector("#themeToggle");
+      const body = document.body; // Get the body element
+
+      function toggleTheme() {
+        if (body.classList.contains("darkTheme")) {
+          body.classList.replace("darkTheme", "lightTheme");
+          button.textContent = "Dark Mode";
+        } else {
+          body.classList.replace("lightTheme", "darkTheme");
+          button.textContent = "Light Mode";
+        }
+      }
+
+      button.addEventListener("click", toggleTheme);
+    </script>
+  </body>
+</html>
